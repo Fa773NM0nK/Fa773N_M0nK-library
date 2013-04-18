@@ -21,7 +21,8 @@ else
 {
 	$rslt = $stmt->fetch ( );
 	
-	if ( hash ( "sha256", ( $_POST['password'] . "F()(K()" ) ) == $rslt['password'] )
+	$randomString = "F()(K()";	
+	if ( hash ( "sha256", ( $_POST['password'] . $randomString ) ) == $rslt['password'] )
 	{
 		session_destroy ( );
 		session_start ( );
