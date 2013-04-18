@@ -1,0 +1,10 @@
+0	:	Successfully validated
+1	:	Does not match date pattern ( "^[0-9]{1,2}" + delim + "[0-9]{1,2}" + delim + "[0-9]{4}$" )
+2	:	day is given as 0
+3	:	month is given as 0
+4	:	year is given as 0
+5 : month is greater that 12
+6	:	month & day don't match. given month can only have 31 days, but a day greater than 31 provided
+7	:	month & day don't match. given month can only have 30 days, but a day greater than 30 provided
+8	:	month & day & year don't match. given combination of month and year can have only 29 days, but a day greater than 29 provided
+9	:	month & day & year don't match. given combination of month and year can have only 28 days, but a day greater than 28 provided
