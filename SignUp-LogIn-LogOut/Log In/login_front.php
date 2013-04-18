@@ -2,7 +2,7 @@
 
 require_once( '../common/common_session.php' );
 
-if ( $_SESSION['logged-in'] == true )
+if ( isset ( $_SESSION['logged-in'] ) && $_SESSION['logged-in'] == true )
 {
 	header ( "Location: ../Home/home.php" );
 }
